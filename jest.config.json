@@ -1,0 +1,39 @@
+{
+  "verbose": true,
+  "roots": ["<rootDir>/src"],
+  "collectCoverageFrom": [
+    "src/**/*.{js,jsx,ts,tsx}",
+    "!src/**/*.d.ts",
+    "!**/*.stories.{js,ts,tsx}",
+    "!src/main.tsx"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jsdom",
+  "moduleNameMapper": {
+    "^@root(.*)$": "<rootDir>/src$1",
+    "^@/(.*)": "<rootDir>/src/$1",
+    "^((?!vars\\.less).)*\\.less": "identity-obj-proxy"
+  },
+  "transform": {
+    "^.+\\.jsx?$": "babel-jest",
+    "^.+\\.tsx?$": "ts-jest"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$",
+    "<rootDir>/src/themes/components/.*"
+  ],
+  "moduleFileExtensions": ["js", "ts", "tsx", "json", "jsx"],
+  "resetMocks": true,
+  "coverageThreshold": {
+    "global": {
+      "statements": 80,
+      "branches": 80,
+      "functions": 80,
+      "lines": 80
+    }
+  }
+}
