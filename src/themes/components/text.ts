@@ -41,6 +41,7 @@ export const Text = defineStyleConfig({
       fontSize: 'xxl', //48px
       lineHeight: 8,
       fontWeight: '600',
+      fontFamily: 'Clash Display',
     },
     '4xl': {
       fontSize: '3xl', //96px

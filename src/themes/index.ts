@@ -2,7 +2,7 @@ import { extendTheme } from '@chakra-ui/react';
 import { fonts, fontSizes, lineHeights, radius } from './typography';
 
 // Components
-import { Avatar, Text } from './components';
+import { Avatar, Button, Text } from './components';
 
 const configThemes = extendTheme({
   fonts,
@@ -12,6 +12,7 @@ const configThemes = extendTheme({
   components: {
     Avatar,
     Text,
+    Button,
   },
 });
 
